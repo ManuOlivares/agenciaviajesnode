@@ -1,0 +1,32 @@
+extends ./layout/index
+
+block slider 
+    .slider
+        h1 Santiago
+        em Bike Orange
+ 
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6 
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, dolorem. Magnam delectus cumque enim nemo sequi, tempore et, temporibus possimus aperiam placeat atque minus dignissimos earum natus vero fugiat aut?
+                p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt consequatur explicabo sapiente blanditiis eius voluptatem quod excepturi, vitae facilis illum repellendus a quidem placeat at laborum minus impedit sit obcaecati.
+            .col-md-6
+                img(src="/img/inicio_nosotros01.jpg", alt="imagen nosotros" class="img-fluid")
+
+        include ./layout/bloque_viajes
+    
+    .descuento
+        .container
+            .row
+                .col-md-5
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo temporada verano
+                        p.fecha 20 Febrero 2024 - 27 Febrero 2024
+                        p.precio $20,000 CLP 
+    
+    .container
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque_testimoniales
